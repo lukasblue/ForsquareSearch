@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D7561CB217B946D00E64C92 /* VenueResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7561CA217B946D00E64C92 /* VenueResponseDataModel.swift */; };
+		1D7561CD217B94EF00E64C92 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7561CC217B94EF00E64C92 /* BaseResponse.swift */; };
+		1D7561DD217BB3AB00E64C92 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7561DB217BB3AB00E64C92 /* VenueTableViewCell.swift */; };
+		1D7561DE217BB3AB00E64C92 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7561DC217BB3AB00E64C92 /* VenueTableViewCell.xib */; };
+		1D84659B217B90DE00A7F6D5 /* VenueDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84659A217B90DE00A7F6D5 /* VenueDataModel.swift */; };
+		1DC41C612178E6E600D6E3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C602178E6E600D6E3B4 /* AppDelegate.swift */; };
+		1DC41C682178E6E600D6E3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC41C672178E6E600D6E3B4 /* Assets.xcassets */; };
+		1DC41C6B2178E6E600D6E3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC41C692178E6E600D6E3B4 /* LaunchScreen.storyboard */; };
+		1DC41C762178E6E900D6E3B4 /* ForsquareSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C752178E6E900D6E3B4 /* ForsquareSearchTests.swift */; };
+		1DC41C812178E6E900D6E3B4 /* ForsquareSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C802178E6E900D6E3B4 /* ForsquareSearchUITests.swift */; };
+		1DC41C912178E7E600D6E3B4 /* SearchVenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C8F2178E7E600D6E3B4 /* SearchVenueViewController.swift */; };
+		1DC41C922178E7E600D6E3B4 /* SearchVenueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC41C902178E7E600D6E3B4 /* SearchVenueViewController.xib */; };
+		1DC41C9A2178EA3A00D6E3B4 /* VenuesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C992178EA3A00D6E3B4 /* VenuesRepository.swift */; };
+		1DC41C9D2178EBD500D6E3B4 /* BaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C9C2178EBD500D6E3B4 /* BaseConnection.swift */; };
+		1DC41C9F2178ED3900D6E3B4 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41C9E2178ED3900D6E3B4 /* ErrorResponse.swift */; };
+		1DC41CA12178EDB600D6E3B4 /* ServerUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CA02178EDB600D6E3B4 /* ServerUrl.swift */; };
+		1DC41CA32178EE1700D6E3B4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CA22178EE1700D6E3B4 /* NetworkManager.swift */; };
+		1DC41CA52178F32A00D6E3B4 /* VenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CA42178F32A00D6E3B4 /* VenueView.swift */; };
+		1DC41CA72178F4F000D6E3B4 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CA62178F4F000D6E3B4 /* LocationRepository.swift */; };
+		1DC41CA92178F52200D6E3B4 /* VenuesServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CA82178F52200D6E3B4 /* VenuesServer.swift */; };
+		1DC41CAB2178F52D00D6E3B4 /* VenuesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CAA2178F52D00D6E3B4 /* VenuesStorage.swift */; };
+		1DC41CAE2178F67E00D6E3B4 /* VenuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC41CAD2178F67E00D6E3B4 /* VenuePresenter.swift */; };
+		1DC6BBF0217B427800D2FFAA /* LocationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6BBEF217B427800D2FFAA /* LocationServer.swift */; };
+		1DC6BBF2217B42DE00D2FFAA /* LocationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6BBF1217B42DE00D2FFAA /* LocationStorage.swift */; };
+		1DC6BBF4217B438700D2FFAA /* LocationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6BBF3217B438700D2FFAA /* LocationDataModel.swift */; };
+		7201B505C9D4F74AF1D0D45A /* Pods_ForsquareSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F05EAD6AA60875045C6A1DA /* Pods_ForsquareSearchTests.framework */; };
+		92736BDC0BCD5E724A4323C4 /* Pods_ForsquareSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684F9715C33899DF4032A0C5 /* Pods_ForsquareSearch.framework */; };
+		9FBACB397AFF460DA2DCCBB0 /* Pods_ForsquareSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EE331C1EFC0DED4300310B /* Pods_ForsquareSearchUITests.framework */; };
+		BF17B18EAD4E19EAAA334BA7 /* Pods_ForsquareSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCBEA9F217B5135004552FB /* Pods_ForsquareSearchTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DC41C722178E6E900D6E3B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DC41C552178E6E500D6E3B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC41C5C2178E6E600D6E3B4;
+			remoteInfo = ForsquareSearch;
+		};
+		1DC41C7D2178E6E900D6E3B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DC41C552178E6E500D6E3B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC41C5C2178E6E600D6E3B4;
+			remoteInfo = ForsquareSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D7561CA217B946D00E64C92 /* VenueResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueResponseDataModel.swift; sourceTree = "<group>"; };
+		1D7561CC217B94EF00E64C92 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		1D7561DB217BB3AB00E64C92 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		1D7561DC217BB3AB00E64C92 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
+		1D84659A217B90DE00A7F6D5 /* VenueDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDataModel.swift; sourceTree = "<group>"; };
+		1DC41C5D2178E6E600D6E3B4 /* ForsquareSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForsquareSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC41C602178E6E600D6E3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DC41C672178E6E600D6E3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DC41C6A2178E6E600D6E3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DC41C6C2178E6E600D6E3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC41C712178E6E900D6E3B4 /* ForsquareSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForsquareSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC41C752178E6E900D6E3B4 /* ForsquareSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForsquareSearchTests.swift; sourceTree = "<group>"; };
+		1DC41C772178E6E900D6E3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC41C7C2178E6E900D6E3B4 /* ForsquareSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForsquareSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC41C802178E6E900D6E3B4 /* ForsquareSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForsquareSearchUITests.swift; sourceTree = "<group>"; };
+		1DC41C822178E6E900D6E3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC41C8F2178E7E600D6E3B4 /* SearchVenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVenueViewController.swift; sourceTree = "<group>"; };
+		1DC41C902178E7E600D6E3B4 /* SearchVenueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVenueViewController.xib; sourceTree = "<group>"; };
+		1DC41C992178EA3A00D6E3B4 /* VenuesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesRepository.swift; sourceTree = "<group>"; };
+		1DC41C9C2178EBD500D6E3B4 /* BaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConnection.swift; sourceTree = "<group>"; };
+		1DC41C9E2178ED3900D6E3B4 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		1DC41CA02178EDB600D6E3B4 /* ServerUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerUrl.swift; sourceTree = "<group>"; };
+		1DC41CA22178EE1700D6E3B4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1DC41CA42178F32A00D6E3B4 /* VenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueView.swift; sourceTree = "<group>"; };
+		1DC41CA62178F4F000D6E3B4 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		1DC41CA82178F52200D6E3B4 /* VenuesServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesServer.swift; sourceTree = "<group>"; };
+		1DC41CAA2178F52D00D6E3B4 /* VenuesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesStorage.swift; sourceTree = "<group>"; };
+		1DC41CAD2178F67E00D6E3B4 /* VenuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePresenter.swift; sourceTree = "<group>"; };
+		1DC6BBEF217B427800D2FFAA /* LocationServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServer.swift; sourceTree = "<group>"; };
+		1DC6BBF1217B42DE00D2FFAA /* LocationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStorage.swift; sourceTree = "<group>"; };
+		1DC6BBF3217B438700D2FFAA /* LocationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataModel.swift; sourceTree = "<group>"; };
+		1DCBEA9F217B5135004552FB /* Pods_ForsquareSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ForsquareSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DCBEAA1217B5182004552FB /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DCBEAA2217B51E6004552FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2F05EAD6AA60875045C6A1DA /* Pods_ForsquareSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForsquareSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F9715C33899DF4032A0C5 /* Pods_ForsquareSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForsquareSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763373B9261EA066154E95DD /* Pods-ForsquareSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForsquareSearchTests/Pods-ForsquareSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82EE331C1EFC0DED4300310B /* Pods_ForsquareSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForsquareSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9179E62A756F9D31DDE1D5EC /* Pods-ForsquareSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForsquareSearchUITests/Pods-ForsquareSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		983A420F1AA073BE08CB4EDB /* Pods-ForsquareSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForsquareSearchTests/Pods-ForsquareSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5C5EEB46E2444C4E50AD446 /* Pods-ForsquareSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForsquareSearch/Pods-ForsquareSearch.release.xcconfig"; sourceTree = "<group>"; };
+		BDE7FB9FCCF5765815B0063D /* Pods-ForsquareSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForsquareSearch/Pods-ForsquareSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		F32EE40D582AE431403C9115 /* Pods-ForsquareSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquareSearchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForsquareSearchUITests/Pods-ForsquareSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DC41C5A2178E6E600D6E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92736BDC0BCD5E724A4323C4 /* Pods_ForsquareSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC41C6E2178E6E900D6E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7201B505C9D4F74AF1D0D45A /* Pods_ForsquareSearchTests.framework in Frameworks */,
+				BF17B18EAD4E19EAAA334BA7 /* Pods_ForsquareSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC41C792178E6E900D6E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FBACB397AFF460DA2DCCBB0 /* Pods_ForsquareSearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D7561CE217BAEFB00E64C92 /* row */ = {
+			isa = PBXGroup;
+			children = (
+				1D7561DB217BB3AB00E64C92 /* VenueTableViewCell.swift */,
+				1D7561DC217BB3AB00E64C92 /* VenueTableViewCell.xib */,
+			);
+			path = row;
+			sourceTree = "<group>";
+		};
+		1DC41C542178E6E500D6E3B4 = {
+			isa = PBXGroup;
+			children = (
+				1DC41C5F2178E6E600D6E3B4 /* ForsquareSearch */,
+				1DC41C742178E6E900D6E3B4 /* ForsquareSearchTests */,
+				1DC41C7F2178E6E900D6E3B4 /* ForsquareSearchUITests */,
+				1DC41C5E2178E6E600D6E3B4 /* Products */,
+				2266AB78960F33445DF29620 /* Pods */,
+				D38D3AE42E8A705ED8BCDDF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DC41C5E2178E6E600D6E3B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41C5D2178E6E600D6E3B4 /* ForsquareSearch.app */,
+				1DC41C712178E6E900D6E3B4 /* ForsquareSearchTests.xctest */,
+				1DC41C7C2178E6E900D6E3B4 /* ForsquareSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DC41C5F2178E6E600D6E3B4 /* ForsquareSearch */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41C9B2178EBC400D6E3B4 /* Networking */,
+				1DC41CAC2178F59700D6E3B4 /* DataModel */,
+				1DC41C962178E9F900D6E3B4 /* Repository */,
+				1DC41C952178E97F00D6E3B4 /* Presenter */,
+				1DC41C942178E97A00D6E3B4 /* Model */,
+				1DC41C8E2178E7B700D6E3B4 /* View */,
+				1DC41C602178E6E600D6E3B4 /* AppDelegate.swift */,
+				1DC41C672178E6E600D6E3B4 /* Assets.xcassets */,
+				1DC41C692178E6E600D6E3B4 /* LaunchScreen.storyboard */,
+				1DC41C6C2178E6E600D6E3B4 /* Info.plist */,
+			);
+			path = ForsquareSearch;
+			sourceTree = "<group>";
+		};
+		1DC41C742178E6E900D6E3B4 /* ForsquareSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41C752178E6E900D6E3B4 /* ForsquareSearchTests.swift */,
+				1DC41C772178E6E900D6E3B4 /* Info.plist */,
+			);
+			path = ForsquareSearchTests;
+			sourceTree = "<group>";
+		};
+		1DC41C7F2178E6E900D6E3B4 /* ForsquareSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41C802178E6E900D6E3B4 /* ForsquareSearchUITests.swift */,
+				1DC41C822178E6E900D6E3B4 /* Info.plist */,
+			);
+			path = ForsquareSearchUITests;
+			sourceTree = "<group>";
+		};
+		1DC41C8E2178E7B700D6E3B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D7561CE217BAEFB00E64C92 /* row */,
+				1DC41C8F2178E7E600D6E3B4 /* SearchVenueViewController.swift */,
+				1DC41C902178E7E600D6E3B4 /* SearchVenueViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DC41C942178E97A00D6E3B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41CA42178F32A00D6E3B4 /* VenueView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DC41C952178E97F00D6E3B4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41CAD2178F67E00D6E3B4 /* VenuePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1DC41C962178E9F900D6E3B4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41C982178EA1F00D6E3B4 /* server */,
+				1DC41C972178EA1600D6E3B4 /* storage */,
+				1DC41C992178EA3A00D6E3B4 /* VenuesRepository.swift */,
+				1DC41CA62178F4F000D6E3B4 /* LocationRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1DC41C972178EA1600D6E3B4 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41CAA2178F52D00D6E3B4 /* VenuesStorage.swift */,
+				1DC6BBF1217B42DE00D2FFAA /* LocationStorage.swift */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		1DC41C982178EA1F00D6E3B4 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41CA82178F52200D6E3B4 /* VenuesServer.swift */,
+				1DC6BBEF217B427800D2FFAA /* LocationServer.swift */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		1DC41C9B2178EBC400D6E3B4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1DC41C9C2178EBD500D6E3B4 /* BaseConnection.swift */,
+				1D7561CC217B94EF00E64C92 /* BaseResponse.swift */,
+				1DC41C9E2178ED3900D6E3B4 /* ErrorResponse.swift */,
+				1DC41CA02178EDB600D6E3B4 /* ServerUrl.swift */,
+				1DC41CA22178EE1700D6E3B4 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1DC41CAC2178F59700D6E3B4 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1DC6BBF3217B438700D2FFAA /* LocationDataModel.swift */,
+				1D84659A217B90DE00A7F6D5 /* VenueDataModel.swift */,
+				1D7561CA217B946D00E64C92 /* VenueResponseDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		2266AB78960F33445DF29620 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDE7FB9FCCF5765815B0063D /* Pods-ForsquareSearch.debug.xcconfig */,
+				A5C5EEB46E2444C4E50AD446 /* Pods-ForsquareSearch.release.xcconfig */,
+				763373B9261EA066154E95DD /* Pods-ForsquareSearchTests.debug.xcconfig */,
+				983A420F1AA073BE08CB4EDB /* Pods-ForsquareSearchTests.release.xcconfig */,
+				9179E62A756F9D31DDE1D5EC /* Pods-ForsquareSearchUITests.debug.xcconfig */,
+				F32EE40D582AE431403C9115 /* Pods-ForsquareSearchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D38D3AE42E8A705ED8BCDDF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DCBEAA2217B51E6004552FB /* XCTest.framework */,
+				1DCBEAA1217B5182004552FB /* RxTest.framework */,
+				1DCBEA9F217B5135004552FB /* Pods_ForsquareSearchTests.framework */,
+				684F9715C33899DF4032A0C5 /* Pods_ForsquareSearch.framework */,
+				2F05EAD6AA60875045C6A1DA /* Pods_ForsquareSearchTests.framework */,
+				82EE331C1EFC0DED4300310B /* Pods_ForsquareSearchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DC41C5C2178E6E600D6E3B4 /* ForsquareSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC41C852178E6E900D6E3B4 /* Build configuration list for PBXNativeTarget "ForsquareSearch" */;
+			buildPhases = (
+				97598285419E4E99E6D35F60 /* [CP] Check Pods Manifest.lock */,
+				1DC41C592178E6E600D6E3B4 /* Sources */,
+				1DC41C5A2178E6E600D6E3B4 /* Frameworks */,
+				1DC41C5B2178E6E600D6E3B4 /* Resources */,
+				B13CCA91D802398455D11D19 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForsquareSearch;
+			productName = ForsquareSearch;
+			productReference = 1DC41C5D2178E6E600D6E3B4 /* ForsquareSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DC41C702178E6E900D6E3B4 /* ForsquareSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC41C882178E6E900D6E3B4 /* Build configuration list for PBXNativeTarget "ForsquareSearchTests" */;
+			buildPhases = (
+				D660B635A8731A89B9185C10 /* [CP] Check Pods Manifest.lock */,
+				1DC41C6D2178E6E900D6E3B4 /* Sources */,
+				1DC41C6E2178E6E900D6E3B4 /* Frameworks */,
+				1DC41C6F2178E6E900D6E3B4 /* Resources */,
+				9D9F94EA3CF1132C2528249D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DC41C732178E6E900D6E3B4 /* PBXTargetDependency */,
+			);
+			name = ForsquareSearchTests;
+			productName = ForsquareSearchTests;
+			productReference = 1DC41C712178E6E900D6E3B4 /* ForsquareSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DC41C7B2178E6E900D6E3B4 /* ForsquareSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC41C8B2178E6E900D6E3B4 /* Build configuration list for PBXNativeTarget "ForsquareSearchUITests" */;
+			buildPhases = (
+				280062CEF9A8FD5C5AD75654 /* [CP] Check Pods Manifest.lock */,
+				1DC41C782178E6E900D6E3B4 /* Sources */,
+				1DC41C792178E6E900D6E3B4 /* Frameworks */,
+				1DC41C7A2178E6E900D6E3B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DC41C7E2178E6E900D6E3B4 /* PBXTargetDependency */,
+			);
+			name = ForsquareSearchUITests;
+			productName = ForsquareSearchUITests;
+			productReference = 1DC41C7C2178E6E900D6E3B4 /* ForsquareSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DC41C552178E6E500D6E3B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Łukasz Wróblak";
+				TargetAttributes = {
+					1DC41C5C2178E6E600D6E3B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1DC41C702178E6E900D6E3B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1DC41C5C2178E6E600D6E3B4;
+					};
+					1DC41C7B2178E6E900D6E3B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1DC41C5C2178E6E600D6E3B4;
+					};
+				};
+			};
+			buildConfigurationList = 1DC41C582178E6E500D6E3B4 /* Build configuration list for PBXProject "ForsquareSearch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DC41C542178E6E500D6E3B4;
+			productRefGroup = 1DC41C5E2178E6E600D6E3B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DC41C5C2178E6E600D6E3B4 /* ForsquareSearch */,
+				1DC41C702178E6E900D6E3B4 /* ForsquareSearchTests */,
+				1DC41C7B2178E6E900D6E3B4 /* ForsquareSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DC41C5B2178E6E600D6E3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC41C6B2178E6E600D6E3B4 /* LaunchScreen.storyboard in Resources */,
+				1D7561DE217BB3AB00E64C92 /* VenueTableViewCell.xib in Resources */,
+				1DC41C682178E6E600D6E3B4 /* Assets.xcassets in Resources */,
+				1DC41C922178E7E600D6E3B4 /* SearchVenueViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC41C6F2178E6E900D6E3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC41C7A2178E6E900D6E3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		280062CEF9A8FD5C5AD75654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForsquareSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97598285419E4E99E6D35F60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForsquareSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9F94EA3CF1132C2528249D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForsquareSearchTests/Pods-ForsquareSearchTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForsquareSearchTests/Pods-ForsquareSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13CCA91D802398455D11D19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForsquareSearch/Pods-ForsquareSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForsquareSearch/Pods-ForsquareSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D660B635A8731A89B9185C10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForsquareSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DC41C592178E6E600D6E3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC6BBF4217B438700D2FFAA /* LocationDataModel.swift in Sources */,
+				1DC41CA52178F32A00D6E3B4 /* VenueView.swift in Sources */,
+				1D7561CB217B946D00E64C92 /* VenueResponseDataModel.swift in Sources */,
+				1DC41CAB2178F52D00D6E3B4 /* VenuesStorage.swift in Sources */,
+				1DC41CAE2178F67E00D6E3B4 /* VenuePresenter.swift in Sources */,
+				1DC6BBF0217B427800D2FFAA /* LocationServer.swift in Sources */,
+				1D7561DD217BB3AB00E64C92 /* VenueTableViewCell.swift in Sources */,
+				1DC41C9F2178ED3900D6E3B4 /* ErrorResponse.swift in Sources */,
+				1DC41C912178E7E600D6E3B4 /* SearchVenueViewController.swift in Sources */,
+				1DC41CA72178F4F000D6E3B4 /* LocationRepository.swift in Sources */,
+				1D7561CD217B94EF00E64C92 /* BaseResponse.swift in Sources */,
+				1DC41CA12178EDB600D6E3B4 /* ServerUrl.swift in Sources */,
+				1DC41CA32178EE1700D6E3B4 /* NetworkManager.swift in Sources */,
+				1DC41CA92178F52200D6E3B4 /* VenuesServer.swift in Sources */,
+				1DC41C9A2178EA3A00D6E3B4 /* VenuesRepository.swift in Sources */,
+				1DC41C9D2178EBD500D6E3B4 /* BaseConnection.swift in Sources */,
+				1D84659B217B90DE00A7F6D5 /* VenueDataModel.swift in Sources */,
+				1DC6BBF2217B42DE00D2FFAA /* LocationStorage.swift in Sources */,
+				1DC41C612178E6E600D6E3B4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC41C6D2178E6E900D6E3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC41C762178E6E900D6E3B4 /* ForsquareSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC41C782178E6E900D6E3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC41C812178E6E900D6E3B4 /* ForsquareSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DC41C732178E6E900D6E3B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC41C5C2178E6E600D6E3B4 /* ForsquareSearch */;
+			targetProxy = 1DC41C722178E6E900D6E3B4 /* PBXContainerItemProxy */;
+		};
+		1DC41C7E2178E6E900D6E3B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC41C5C2178E6E600D6E3B4 /* ForsquareSearch */;
+			targetProxy = 1DC41C7D2178E6E900D6E3B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DC41C692178E6E600D6E3B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DC41C6A2178E6E600D6E3B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DC41C832178E6E900D6E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DC41C842178E6E900D6E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DC41C862178E6E900D6E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE7FB9FCCF5765815B0063D /* Pods-ForsquareSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5C7AQ4E68;
+				INFOPLIST_FILE = ForsquareSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireObjectMapper\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"RxSwift\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lukaszwroblak.ForsquareSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DC41C872178E6E900D6E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C5EEB46E2444C4E50AD446 /* Pods-ForsquareSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5C7AQ4E68;
+				INFOPLIST_FILE = ForsquareSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireObjectMapper\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"RxSwift\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lukaszwroblak.ForsquareSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DC41C892178E6E900D6E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763373B9261EA066154E95DD /* Pods-ForsquareSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5C7AQ4E68;
+				INFOPLIST_FILE = ForsquareSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"RxSwift\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lukasz-wroblak.ForsquareSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForsquareSearch.app/ForsquareSearch";
+			};
+			name = Debug;
+		};
+		1DC41C8A2178E6E900D6E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983A420F1AA073BE08CB4EDB /* Pods-ForsquareSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5C7AQ4E68;
+				INFOPLIST_FILE = ForsquareSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"RxSwift\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lukasz-wroblak.ForsquareSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForsquareSearch.app/ForsquareSearch";
+			};
+			name = Release;
+		};
+		1DC41C8C2178E6E900D6E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9179E62A756F9D31DDE1D5EC /* Pods-ForsquareSearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5C7AQ4E68;
+				INFOPLIST_FILE = ForsquareSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lukasz-wroblak.ForsquareSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForsquareSearch;
+			};
+			name = Debug;
+		};
+		1DC41C8D2178E6E900D6E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32EE40D582AE431403C9115 /* Pods-ForsquareSearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5C7AQ4E68;
+				INFOPLIST_FILE = ForsquareSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lukasz-wroblak.ForsquareSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForsquareSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DC41C582178E6E500D6E3B4 /* Build configuration list for PBXProject "ForsquareSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC41C832178E6E900D6E3B4 /* Debug */,
+				1DC41C842178E6E900D6E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC41C852178E6E900D6E3B4 /* Build configuration list for PBXNativeTarget "ForsquareSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC41C862178E6E900D6E3B4 /* Debug */,
+				1DC41C872178E6E900D6E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC41C882178E6E900D6E3B4 /* Build configuration list for PBXNativeTarget "ForsquareSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC41C892178E6E900D6E3B4 /* Debug */,
+				1DC41C8A2178E6E900D6E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC41C8B2178E6E900D6E3B4 /* Build configuration list for PBXNativeTarget "ForsquareSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC41C8C2178E6E900D6E3B4 /* Debug */,
+				1DC41C8D2178E6E900D6E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DC41C552178E6E500D6E3B4 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_ForsquareSearchUITests {
+  umbrella header "Pods-ForsquareSearchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
